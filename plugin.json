@@ -2,13 +2,20 @@
   "name": "ctf-toolbox",
   "title": "网安 CTF 工具箱",
   "description": "CTF / 授权安全测试用编码转换、哈希、JWT 解析、古典密码与公开 Payload 速查。",
-  "author": "polaris",
+  "author": "海湾上的北辰",
   "version": "1.2.0",
   "main": "index.html",
   "preload": "preload.js",
   "logo": "logo.png",
-  "platform": ["win32", "darwin", "linux"],
-  "categories": ["developer", "security"],
+  "platform": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "categories": [
+    "developer",
+    "security"
+  ],
   "pluginSetting": {
     "single": true,
     "height": 720
@@ -52,7 +59,13 @@
     {
       "code": "hash",
       "explain": "计算 MD5 / SHA1 / SHA256 / SHA512",
-      "cmds": ["md5", "sha1", "sha256", "哈希", "hash"]
+      "cmds": [
+        "md5",
+        "sha1",
+        "sha256",
+        "哈希",
+        "hash"
+      ]
     },
     {
       "code": "jwt",
@@ -71,12 +84,25 @@
     {
       "code": "php-bypass",
       "explain": "PHP 无字母数字 RCE：按函数名构造取反 / 异或 / 或 / 自增",
-      "cmds": ["php绕过", "无字母rce", "取反绕过", "异或绕过", "自增绕过"]
+      "cmds": [
+        "php绕过",
+        "无字母rce",
+        "取反绕过",
+        "异或绕过",
+        "自增绕过"
+      ]
     },
     {
       "code": "payload",
       "explain": "公开 Payload 速查：PHP 伪协议、无字母 RCE、XSS、SSTI 等",
-      "cmds": ["php伪协议", "xss绕过", "ssti", "lfi", "xxe", "payload库"]
+      "cmds": [
+        "php伪协议",
+        "xss绕过",
+        "ssti",
+        "lfi",
+        "xxe",
+        "payload库"
+      ]
     }
   ]
 }
