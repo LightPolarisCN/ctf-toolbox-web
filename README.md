@@ -19,14 +19,14 @@
 
 ```
 ctf-toolbox/
-├── plugin.json      # ZTools 插件清单
-├── preload.js       # Node crypto / 复制
+├── plugin.json
+├── preload.js
 ├── index.html
 ├── styles.css
 ├── app.js
 ├── codec.js
 ├── payloads.js
-├── logo.png         # 原创几何图标
+├── logo.png
 ├── ASSETS.md
 ├── LICENSE
 └── README.md
