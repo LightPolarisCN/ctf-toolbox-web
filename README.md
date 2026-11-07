@@ -9,7 +9,7 @@
 - 编码 / 解码：Base64、Base64URL、Base32、Base58、Hex、URL、HTML 实体、Unicode、二进制、Quoted-Printable、ROT13、Caesar、Morse
 - 自动识别常见编码并一键切换对应解码
 - MD5 / SHA1 / SHA256 / SHA512，可选 HMAC-SHA256
-- JWT Header / Payload 解析（不伪造签名）
+- JWT Header / Payload 解析，none / HS256·384·512 / RS256·384·512 伪造签名（含弱密钥、算法混淆）
 - 古典密码：Caesar、ROT13、栅栏
 - Payload 速查：PHP 伪协议、LFI、XSS、SSTI、SQLi、XXE、SSRF、上传绕过
 - PHP 绕过构造（独立栏目）：输入函数名，即时生成取反 / 异或 / 或 / 自增
