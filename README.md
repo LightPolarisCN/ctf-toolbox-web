@@ -12,28 +12,29 @@
 
 - 编码 / 解码：Base64、Base64URL、Base32、Base58、Hex、URL、HTML 实体、Unicode、二进制、Quoted-Printable、ROT13、Caesar、Morse
 
-![编码/解码 t1](images/t1.png)
-![编码/解码 t2](images/t2.png)
+<img src="images/t1.png" alt="编码/解码 t1" width="720" />
+
+<img src="images/t2.png" alt="编码/解码 t2" width="720" />
 
 - MD5 / SHA1 / SHA256 / SHA512，可选 HMAC-SHA256
 
-![哈希计算](images/t3.png)
+<img src="images/t3.png" alt="哈希计算" width="720" />
 
 - JWT Header / Payload 解析，none / HS256·384·512 / RS256·384·512 伪造签名（含弱密钥、算法混淆）
 
-![JWT 解析](images/t4.png)
+<img src="images/t4.png" alt="JWT 解析" width="720" />
 
 - 古典密码：Caesar、ROT13、栅栏
 
-![古典密码](images/t5.png)
+<img src="images/t5.png" alt="古典密码" width="720" />
 
 - PHP 绕过构造（独立栏目）：输入函数名，即时生成取反 / 异或 / 或 / 自增
 
-![PHP 绕过](images/t6.png)
+<img src="images/t6.png" alt="PHP 绕过" width="720" />
 
 - Payload 速查：PHP 伪协议、LFI、XSS、SSTI、SQLi、XXE、SSRF、上传绕过
 
-![Payload 速查](images/t7.png)
+<img src="images/t7.png" alt="Payload 速查" width="720" />
 
 ## 开始
 
@@ -43,50 +44,14 @@
 
 在 ZTools 或 uTools 插件市场搜索 **网安 CTF 工具箱**，下载即可。
 
-![插件市场安装](images/s1.png)
+<img src="images/s1.png" alt="插件市场安装" width="720" />
 
 #### 方法二：在 Releases 下载已经打包好的插件包安装
 
 在 [Releases](https://github.com/LightPolarisCN/ctf-toolbox-web/releases) 下载插件包，下载好后点击导入本地插件。
 
-![导入本地插件](images/s2.png)
+<img src="images/s2.png" alt="导入本地插件" width="720" />
 
 选择下载的插件包，点击安装即可。
 
-![选择插件包](images/s3.png)
-
-### 方法三：手动编译插件包
-
-```bash
-# 1. 进入插件目录
-cd ctf-toolbox-web
-
-# 2. 语法检查（无输出即通过）
-node --check codec.js && node --check app.js && node --check preload.js
-
-# 3. 打包，版本号取自 plugin.json
-VERSION=$(node -p "require('./plugin.json').version")
-zip -r "../ctf-toolbox-${VERSION}.zip" \
-  plugin.json preload.js index.html styles.css app.js codec.js payloads.js logo.png \
-  -x '*.DS_Store' '*__MACOSX*'
-
-# 4. 查看包内容，确认第一层是 plugin.json
-unzip -l "../ctf-toolbox-${VERSION}.zip"
-```
-
-## 目录
-
-```
-ctf-toolbox/
-├── plugin.json
-├── preload.js
-├── index.html
-├── styles.css
-├── app.js
-├── codec.js
-├── payloads.js
-├── logo.png
-├── ASSETS.md
-├── LICENSE
-└── README.md
-```
+<img src="images/s3.png" alt="选择插件包" width="720" />
